@@ -1,0 +1,12 @@
+{
+    "name": "basic-app/admin-auth",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "BasicApp\\AdminAuth\\": ""
+        }
+    },
+    "require": {
+        "basic-app/auth": "*"
+    }
+}
