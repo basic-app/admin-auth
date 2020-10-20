@@ -6,7 +6,7 @@
  */
 namespace BasicApp\AdminAuth\Config;
 
-use BasicApp\AdminAuth\Models\AdminModel;
+use Admin\Models\AdminModel;
 
 class AdminAuth extends \CodeIgniter\Config\BaseConfig
 {
