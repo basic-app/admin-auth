@@ -4,7 +4,7 @@
  * @license MIT
  * @link https://basic-app.com
  */
-namespace BasicApp\AdminAuth;
+namespace BasicApp\AdminAuth\Config;
 
 use BasicApp\AdminAuth\Models\AdminModel;
 
