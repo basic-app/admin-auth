@@ -9,5 +9,8 @@ echo view_cell('AdminAuthLayout', [
     'description' => $description ?? null,
     'content' => $this->renderSection('main'),
     'styles' => $this->renderSection('pageStyles'),
-    'scripts' => $this->renderSection('pageScripts')
+    'scripts' => $this->renderSection('pageScripts'),
+    'error' => session('error'),
+    'errors' => session('errors'),
+    'message' => session('message')
 ]);
