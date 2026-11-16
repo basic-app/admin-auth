@@ -1,9 +1,11 @@
 <?php
+
 declare(strict_types=1);
 /**
  * @author Basic App Dev Team
  * @license MIT
  */
+
 namespace BasicApp\AdminAuth\Interfaces;
 
 use BasicApp\AdminAuth\Config\AdminAuth as AdminAuthConfig;

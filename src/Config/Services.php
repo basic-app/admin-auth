@@ -1,10 +1,12 @@
 <?php
+
 declare(strict_types=1);
 /**
  * @author Basic App Dev Team <dev@basic-app.com>
  * @license MIT
  * @link https://basic-app.com
  */
+
 namespace BasicApp\AdminAuth\Config;
 
 use CodeIgniter\Config\BaseService;
@@ -15,11 +17,10 @@ class Services extends BaseService
 {
     public static function adminAuth($getShared = true)
     {
-        if ($getShared) 
-        {
+        if ($getShared) {
             return static::getSharedInstance(__FUNCTION__);
         }
-    
+
         $config = config(AdminAuthConfig::class);
 
         $credentialClass = $config->credentialClass;
@@ -29,8 +30,9 @@ class Services extends BaseService
         assert(class_exists($credentialClass), $credentialClass . ' class is not found.');
 
         $return = new $credentialClass($config);
-    
-        assert($return instanceof AdminInterface, 
+
+        assert(
+            $return instanceof AdminInterface,
             $credentialClass . ' is not instance of ' . AdminInterface::class
         );
 
