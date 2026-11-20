@@ -1,5 +1,7 @@
 <?php
+
 declare(strict_types=1);
+
 /**
  * @author Basic App Dev Team
  * @license MIT
@@ -12,6 +14,6 @@ echo view_cell('AdminAuthLayout', [
     'styles' => $this->renderSection('pageStyles'),
     'scripts' => $this->renderSection('pageScripts'),
     'error' => session('error'),
-    'errors' => session('errors'),
+    'errors' => session('errors') ?? [],
     'message' => session('message')
 ]);

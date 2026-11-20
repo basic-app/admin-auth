@@ -15,7 +15,7 @@ use BasicApp\AdminAuth\Interfaces\AdminInterface;
 
 class Services extends BaseService
 {
-    public static function adminAuth($getShared = true)
+    public static function adminAuth($getShared = true): AdminInterface
     {
         if ($getShared) {
             return static::getSharedInstance(__FUNCTION__);
